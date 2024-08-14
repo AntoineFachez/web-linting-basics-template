@@ -1,14 +1,18 @@
 function toggleButton() {
-  const cards = document.querySelectorAll("[data-js=card]");
-  const buttons = card.querySelectorAll("[data-js=buttons]");
+  const cards = document.querySelectorAll('[data-js="card"]');
+
   cards.forEach(card => {
-        const button = card.querySelector('[data-js="button"]')
-        const link =  cards.querySelector('[data-js="link"]')
-        const arrow = card.querySelector('[data-js="arrow"]')
-          button.addEventListener('click',() => {
-          link.classList.toggle("hide")
-          arrow.classList.toggle("rotate")
-          
-    })
-})
+    const button = card.querySelector('[data-js="button"]');
+    const link = card.querySelector('[data-js="link"]');
+    const arrow = card.querySelector('[data-js="arrow"]');
+    button.addEventListener('click', () => {
+      console.log('clicked');
+
+      link.classList.toggle('hidden');
+      arrow.classList.toggle('rotate');
+    });
+    card.append(button);
+  });
+  // cards.append(buttons);
 }
+toggleButton();

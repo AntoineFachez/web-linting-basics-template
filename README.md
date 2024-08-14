@@ -16,4 +16,5 @@ The buttons in the list items don't seem to be working. Follow the instructions 
 - Use `npm run fix` to find errors and format your code
 
 Inspect the package.json to see more commands to run the linters individually.
+
 # web-linting-basics-template
